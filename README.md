@@ -1,2 +1,2 @@
-# praxis-academy1
-Sebagai persyaratan mendaftar di praxis academy
+# praxis-academy
+Sebagai persyaratan mendaftar di Praxis Academy
