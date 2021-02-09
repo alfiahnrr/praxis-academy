@@ -4,6 +4,7 @@
     font-weight: bold;
     color: #FFFFFF;
     margin-left: 50px;
+    
 }
 .menu {
     display: inline-block;
@@ -14,6 +15,9 @@
     background-size: cover;
     background-color: #CDDC39;
     border: 20px;
+    top: 0;
+    position: static;
+    width: 100%;
 }
 
 .menu ul {
