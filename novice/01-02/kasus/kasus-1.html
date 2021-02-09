@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kasus pertama</title>
+</head>
+<body>
+    <script>
+var num1, num2;
+num1 = window.prompt("masukkan angka pertama", "0");
+num2 = window.prompt("masukkan angka kedua", "0");
+
+if(parseInt(num1, 10) > parseInt(num2, 10))
+{ 
+    console.log("Angka yang lebih besar dari "+ num1+ "dan"+ num2+ "adalah "+ num1+ ".");
+} else if (parseInt(num2, 10) > parseInt (num1, 10))
+{
+    console.log("Angka yang lebih besar dari"+ num1+ "dan"+ num2+ "adalah "+ num2+ ".");
+} else {
+    console.log("Angka dari "+ num1+ "dan "+num2 + "adalah sama besar.");
+}
+    </script>
+</body>
+</html>
