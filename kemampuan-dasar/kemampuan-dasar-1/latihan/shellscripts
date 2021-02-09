@@ -1,3 +1,0 @@
-C:\Scripts\Script Test.ps1
-Write-Host "Hello, World!"
-& "C:\Scripts\Script Test.ps1"
