@@ -1,0 +1,38 @@
+--- OUTPUT ---
+ada 4 cara menampilkan output
+1. console.log() untuk debugging, kalo error bakal ditampilin di console
+2. alert() atau window.alert() untuk menampilkan jendela dialog/pop-up dialog. cuma bisa ipake di browser
+3. document.write() untuk menulis output ke dokumen HTML
+4. innerHTML untuk menampilkan output ke elemen HTML yang lebih spesifik
+
+--- TIPE DATA ---
+#VARIABEL
+var bisa menimbulkan kekeliruan karena sifatnya yang bisa di deklarasikan ulang
+let tidak bisa di deklarasikan ulang sehingga nanti akan otomatis muncul error
+const variabel yang tetap 
+
+#TIPE DATA
+1. String (teks)
+2. Integer atau Number (bilangan bulat)
+3. Float (bilangan Pecahan)
+4. Boolean (true atau  false)
+5. Object (array)
+
+--- DIALOG ---
+jendela dialog ada 3 
+1. alert() pop up tanpa input yang dipake saat hanya ingin menampilkan informasi saja. kalo mau pake tombol aktif bisa tambahin <button onClick="alert()"></button>
+2. confirm() pop up yang bisa attach direct link dan dipake saat pengen jawaban konfirmasi
+3. prompt() pop up yang pake input dipake pas ingin mengambil data
+
+--- PERCABANGAN/PENGKONDISIAN ---
+ada if, if/else, dan if/else/if
+
+--- PERULANGAN/LOOPING ---
+Perulangan yang termasuk dalam Counted Loop:
+1. Perulangan For
+2. Perulangan Foreach
+3. Perulangan Repeat
+
+Perulangan yang termasuk dalam Uncounted Loop:
+1. Perulangan While
+2. Perulangan Do/While
