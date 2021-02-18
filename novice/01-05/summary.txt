@@ -1,0 +1,26 @@
+OOP - DAY 5
+
+constractor untuk menambahkan properti di class
+penulisan kelas diawali dengan capital letters
+
+--Object.assign() : Menyalin nilai dari semua properti enumerable sendiri dari satu atau lebih objek sumber ke objek target.
+--Object.create() : Membuat objek baru dengan objek prototipe dan properti yang ditentukan.
+--Object.defineProperty() : Menambahkan properti bernama yang dijelaskan oleh deskriptor tertentu ke objek.
+--Object.defineProperties() : Menambahkan properti bernama yang dijelaskan oleh deskriptor yang diberikan ke suatu objek.
+--Object.entries() : Mengembalikan larik yang berisi semua [key, value]pasangan dari properti string yang dapat dihitung sendiri dari objek tertentu .
+--Object.freeze() : Membekukan suatu objek. Kode lain tidak dapat menghapus atau mengubah propertinya.
+-- Object.fromEntries() : Mengembalikan objek baru dari [key, value]pasangan iterable . (Ini kebalikan dari Object.entries).
+-- Object.getOwnPropertyDescriptor() : Mengembalikan deskriptor properti untuk properti bernama pada sebuah objek.
+-- Object.getOwnPropertyDescriptors() : Mengembalikan objek yang berisi semua deskriptor properti sendiri untuk suatu objek.
+-- Object.getOwnPropertyNames() : Pengembalian array yang berisi nama-nama semua objek yang diberikan ini sendiri sifat enumerable dan non-enumerable.
+--Object.getOwnPropertySymbols() : Mengembalikan larik dari semua properti simbol yang ditemukan langsung pada objek tertentu.
+--Object.getPrototypeOf() : Mengembalikan prototipe ( [[Prototype]]properti internal ) dari objek yang ditentukan.
+--Object.is() : Membandingkan jika dua nilai adalah nilai yang sama. Menyamakan semua NaNnilai (yang berbeda dari Perbandingan Kesetaraan Abstrak dan Perbandingan Kesetaraan Ketat).
+--Object.isExtensible() : Menentukan apakah perluasan objek diperbolehkan.
+--Object.isFrozen() : Menentukan apakah suatu objek dibekukan.
+--Object.isSealed() : Menentukan apakah suatu benda disegel.
+--Object.keys() : Mengembalikan larik yang berisi nama semua properti string yang dapat dihitung sendiri dari objek tertentu .
+--Object.preventExtensions() : Mencegah ekstensi apa pun dari suatu objek.
+--Object.seal() : Mencegah kode lain dari menghapus properti suatu objek.
+--Object.setPrototypeOf() : Set prototipe objek ( [[Prototype]]properti internalnya ).
+--Object.values() : Mengembalikan array yang berisi nilai-nilai yang sesuai dengan semua benda yang diberikan itu sendiri properti string enumerable.

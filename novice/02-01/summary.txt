@@ -1,0 +1,3 @@
+listPeople
+
+listPeople.filter(pass => pass.pass == true);

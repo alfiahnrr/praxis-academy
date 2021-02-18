@@ -1,0 +1,6 @@
+DAY 3 
+
+
+catch (err) {
+}
+adalah syntax untuk menampilkan error

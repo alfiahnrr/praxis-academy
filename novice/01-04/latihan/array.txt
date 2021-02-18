@@ -1,0 +1,18 @@
+let arr = ["aku", "kamu", "kita"];
+console.log(arr);
+for (let i =0; i<arr.length; i++) {
+  console.log(arr[i]);
+}
+arr.push("satu");
+arr.push("dua");
+console.log(arr);
+arr.splice(2,2);
+console.log(arr);
+
+let laptop = {
+  color : 'merah',
+  shape : 'kotak'
+};
+console.log(laptop);
+console.log(`laptop saya warna ${laptop.color}`);
+console.log(`laptop saya bentuknya ${laptop.shape}`);

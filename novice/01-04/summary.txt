@@ -1,0 +1,130 @@
+1. METHOD ARRAY PADA JS
+---join()---
+fungsinya buat bikin array jadi string, bisa diselipin karakter/pembatas juga misalnya gini 
+	var arr1 = [1,2,3,4,5,"a","b","c","d","e"];
+	console.log(arr1.join("."));
+nah nanti outpunya bakal jadi 1.2.3.4.5.a.b.c.d.e 
+
+---reserve()---
+kalo ini buat balikin urutan dari elemen array. penggunaanya gini 
+	var arr1 = [1,2,3,4,5,"a","b","c","d","e"];
+	arr1.reverse();
+	console.log(arr1.toString());         
+nah outpunya : e,d,c,b,a,5,4,3,2,1
+
+---sort()---
+kalo ini justru buat bikin pengurutannya, nah tapi kalo elemennya berbentuk angka bakal dikonversi menjadi string, baru abis itu diurutin. elemen yang kosong/null/undegined bakal ditaro dibagian belakang
+yok liat contohnya
+	var arr1 = ["zulkifli","andi","erik","joko","dina"];
+	arr1.sort();
+	console.log(arr1.toString());         //hasil: andi,dina,erik,joko,zulkifli
+  
+	var arr2 = [3,5,2,8,,,1,31,22,44,33,11];
+	arr2.sort();
+	console.log(
+	arr2.toString());         //hasil: 1,11,2,22,3,31,33,44,5,8,,
+
+nah kalo mau hasilnya urut, pake fungsi dulu, gini
+	var arr2 = [3,5,2,8,,,1,31,22,44,33,11];
+	arr2.sort(function(a,b) {return a-b;});
+	console.log(arr2.toString());             //hasil: 1,2,3,5,8,11,22,31,33,44,,
+
+---slice()---
+gunanya buat memotong array jadi array baru, gini misalnya
+	var arr1 = [1,2,3,4,"a","b","c","d"];
+  
+	//slice dari index ke 2 sampai 4
+	var arr2 = arr1.slice(2,4)
+	console.log(arr2.toString());         //hasil: 3,4
+
+	//slice dari index ke 4 sampai akhir array
+	var arr3 = arr1.slice(4)
+	console.log(arr3.toString());         //hasil: a,b,c,d
+  
+	//slice dari index ke 2 dari akhir array
+	var arr4 = arr1.slice(-2)
+	console.log(arr4.toString());         //hasil: c,d
+  
+	//slice dari index ke 5 dari akhir array sampai
+	//index ke 2 dari akhir array
+	var arr5 = arr1.slice(-5,-2)
+	console.log(arr5.toString());         //hasil: 4,a,b
+
+---splice()---
+splice ini bisa memotong tapi bisa juga menambahkan array sekaligus, begini contoh pengaplikasiannya
+	var arr1 = [1,2,3,4,"a","b","c","d"];
+	console.log(arr1.toString());     // hasil: 1,2,3,4,a,b,c,d
+  
+	//splice dari index ke 4
+	var arr2 = arr1.splice(4)
+  
+	console.log(arr1.toString());     // hasil: 1,2,3,4
+	console.log(arr2.toString());     // hasil: a,b,c,d
+
+---push dan pop()---
+kalo push buat nambahin elemen array, pop buat kuranginnya. penambahan dan pengurangan elemen bakal berdampak di elemen terakhir dari array. jadi first in last out, paham ga?
+gini bos contohnya
+	var arr1 = [];
+  
+	arr1.push("a","b","c");
+	console.log(arr1.toString());   // hasil: a,b,c
+  
+	arr1.push("d");
+	console.log(arr1.toString());   // hasil: a,b,c,d
+  
+	arr1.pop();
+	console.log(arr1.toString());   // hasil: a,b,c
+  
+	arr1.pop();
+	console.log(arr1.toString());   // hasil: a,b
+
+---shift() dan unshift()---
+mirip sama push and pop bedanya method ini bakal nambahin/menghapus elemen baru di awal array
+kek gini contohnya
+	var arr1 = [];
+  
+	arr1.unshift("a","b","c");
+	console.log(arr1.toString());   // hasil: a,b,c
+  
+	arr1.unshift("d");
+	console.log(arr1.toString());   // hasil: d,a,b,c
+  
+	arr1.shift();
+	console.log(arr1.toString());   // hasil: a,b,c
+  
+	arr1.shift();
+	console.log(arr1.toString());   // hasil: b,c
+
+---toString() dan toLocaleString()---
+buat mengkonversi dari array menjadi string, kek yang dipake di atas2 itu semuanya pake toString gais, sebenernya bisa aja ga pake to string jadi langsung kek gini
+	var arr1 = [1,2,3,4,"a","b","c","d"];
+	console.log(arr1);           // hasil: 1,2,3,4,a,b,c,d
+tapi masih gatau pa bedanya xixi. nanti kalo dah tau akan ku edit note ini
+
+2. METHOD MAP DAN SET PADA JS
+---MAP
+Seringkali, kita menemukan diri kita perlu mengambil array dan memodifikasi setiap elemen di dalamnya dengan cara yang persis sama. Contoh-contoh yang umum adalah mengkuadratkan setiap elemen dalam array angka, mengambil nama dari daftar pengguna, atau menjalankan regex pada suatu array string.
+map adalah metode yang dibuat untuk melakukan hal itu. Ini didefinisikan pada Array.prototype, sehingga kamu dapat memanggilnya di array apa pun, dan ia menerima callback sebagai argumen pertamanya.
+Ketika kamu memanggil map pada suatu array, ia akan menjalankan callback tersebut pada setiap elemen di dalamnya, mengembalikan sebuah array baru dengan semua nilai yang dikembalikan oleh callback.
+
+masi ga paham cokkkkk but we'll try and practice more!
+map adalah kumpulan key value. mari liat method dari map!
+
+new Map([iterable]) – ini buat map baru, sebelumya definisikan pake let dulu. with optional iterable (e.g. array) of [key,value] pairs for initialization.
+map.set(key, value) – buat menyimpan nilai dengan kunci, dan mengembalikan peta itu sendiri
+map.get(key) – kalo ini buat mengembalikan nilai dengan kunci, tidak ditentukan jika kunci tidak ada di peta
+map.has(key) – ini buat mengembalikan true jika kuncinya ada, false jika tidak
+map.delete(key) – nah ini untuk menghapus nilai dengan kunci, mengembalikan true jika kunci ada pada saat panggilan, jika tidak salah
+map.clear() – ini buat menghapus semuanya pokoknya
+map.size – buat mengembalikan jumlah elemen saat ini
+
+---SET
+set adalah kumpulan dari unique values
+
+new Set([iterable]) – membuat set baru, dengan iterable opsional (misalnya array) nilai untuk inisialisasi
+set.add(value) – untuk menambahkan value (ga akan bekerja kalo dah ada value), mengembalikan set itu sendiri
+set.delete(value) – menghapus value, mengembalikan true kalo ada value pas panggilan, kalo gada false
+set.has(value) – mengembalikan true jika nilainya ada di set, jika tidak salah
+set.clear() – menghapus semuanya dari set
+set.size – adalah jumlah elemen
+

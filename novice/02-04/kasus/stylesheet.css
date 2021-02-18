@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(225, 226, 243);;
+}
+
+h1 {
+    font-family:'Segoe UI';
+    color: rgb(99, 100, 185);
+    text-align: center;
+}
+
+li {
+    margin-bottom: 10px;
+  }
+
+  li button {
+    font-size: 8px;
+    margin-left: 20px;
+    color: rgb(137, 139, 241);
+  }
+
+ul {
+    list-style-type: decimal;
+    font-family:'Segoe UI';
+    font-size: 20px;
+    color: rgb(137, 139, 241);
+}
+
+    ul button{
+    font-size: 13px;
+    margin-left: 20px;
+    color: #fff;
+    }
+
+label {
+    font-family:'Segoe UI';
+    font-weight: 100;
+    color:  rgb(99, 100, 185);
+    font-size: 25px;
+}
+
+button {
+    outline-style: none;
+    background-color :rgb(170, 170, 219);
+    color: white;
+    border-style: dashed;
+    border-width: 6px;
+    border-color: rgb(170, 170, 219);
+    border-radius: 2px;
+    font-family:'Segoe UI';
+}
+
+input {
+    height: 25px;
+}
+
+.listBtn {
+    outline-style: none;
+    background-color :rgb(170, 170, 219);
+    color: white;
+    border-style: dashed;
+    border-width: 6px;
+    border-color: rgb(170, 170, 219);
+    border-radius: 2px;
+    font-family:'Segoe UI';
+}

@@ -1,0 +1,16 @@
+--MENGAMBIL HASIL DARI POP-UP DIALOG--
+var nama = prompt("masukkan nama");
+
+alert(`halo ${nama}, you can through this rough day! keep on going cause something cool is waiting over here!`);
+
+--MENGAMBIL HASIL DARI POP-UP DIALOG DGN IF ELSE--
+var cantik = confirm('kamu cantik')
+;
+if (cantik == true) {
+ 
+	alert('yasshhh, keep on loving yourself!');
+} else {
+
+	alert('siapa bilang kamu ga cantik? u\'re beautiful and precious!');
+
+};

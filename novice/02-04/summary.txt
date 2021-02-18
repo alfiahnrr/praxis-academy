@@ -1,0 +1,3 @@
+DOM (Document Object Model)
+adalah objek untuk dokumen html dan xml untuk mengubah struktur dokumen, gaya dan konten
+dom juga merepresentasikan dokumen menjadi node
